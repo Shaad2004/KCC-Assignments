@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main() {
+    int r,c,s=0,a=0,l,n;
+    scanf("%d",&n);
+    int arr[n][n];
+    for (r=0;r<n;r++)
+    {for (c=0;c<n;c++)
+    {scanf("%d",&arr[r][c]);
+    }}
+    for (r=0;r<n;r++)
+    {for (c=0;c<n;c++)
+    {if(c==r)
+    {s+=arr[c][r];
+    }
+    if (c+r==n-1)
+    {a+=arr[c][r];
+    }}}
+    l=abs(s-a);
+    printf("%d",l);
+    int getch();
+}
